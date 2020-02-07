@@ -1,3 +1,8 @@
 language: java
 jdk:
-  - oraclejdk12
+  - openjdk10
+deploy:
+  provider: heroku
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: zm-address-book

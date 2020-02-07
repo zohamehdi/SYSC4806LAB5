@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Buddy Infos</title>
+
+
+</head>
+
+<body>
+<p style="color:red" th:text="${error}"></p>
+<table>
+    <thead>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Phone Number</td>
+    <td>Address</td>
+    <td>Age</td>
+    </thead>
+
+    <tr th:each="buddyInfo : ${buddyInfos}">
+        <td th:text="${buddyInfo.id}"/>
+        <td th:text="${buddyInfo.name}"/>
+        <td th:text="${buddyInfo.phone_number}"/>
+        <td th:text="${buddyInfo.address}"/>
+        <td th:text="${buddyInfo.age}"/>
+    </tr>
+</table>
+
+</body>
+</html>

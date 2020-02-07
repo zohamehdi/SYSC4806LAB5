@@ -1,5 +1,10 @@
 package com;
 
+// Its only job is to display what the user sees
+// It performs no calculations, but instead passes
+// information entered by the user to whomever needs
+// it.
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +13,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 @Component
-class AddressBookView extends JFrame{
+public class AddressBookView extends JFrame{
 
     @Autowired
     private AddressBookModel theModel;

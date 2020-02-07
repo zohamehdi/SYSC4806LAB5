@@ -18,7 +18,6 @@ public class AddressBookApplication {
         ApplicationContext contexto = new SpringApplicationBuilder(AddressBookApplication.class)
                 .headless(false)
                 .run(args);
-        //changes
 
         EventQueue.invokeLater(() -> {
 

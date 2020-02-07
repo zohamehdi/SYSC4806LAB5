@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-class BuddyInfo implements Serializable {
+public class BuddyInfo implements Serializable {
     String message;
     int age;
     String name;

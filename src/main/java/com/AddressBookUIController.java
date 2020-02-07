@@ -29,7 +29,6 @@ public class AddressBookUIController {
             buddyInfos = new ArrayList<>();
         }
         model.addAttribute("buddyInfos", buddyInfos);
-
         return "buddyInfos";
     }
 }

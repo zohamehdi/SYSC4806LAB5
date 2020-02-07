@@ -5,6 +5,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
 // The Model performs all the calculations needed
 // and that is it. It doesn't know the View
 // exists
